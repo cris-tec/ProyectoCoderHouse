@@ -1,0 +1,72 @@
+
+/*Inicio de main distintas páginas*/
+/*Clase de Bootstrap modificada*/
+.text-dark{
+    @extend %descripciones;
+    font-size: nth($tamanioReutilizable, 3 )
+}
+
+/*Parte de la descripción de mi perfil, curriculum y proyectos*/
+.experiencia_cv, .estudios_cv, .referencias_cv, .proyecto1, .proyecto2, .proyecto_n, .link1, .link2, .link_n{
+    @extend %descripciones;
+    margin: $margenesDescTitulo2;
+	color:#4a4b4b;
+    font-size: nth($tamanioReutilizable, 3 )
+}
+
+.experiencia, .estudios, .referencias, .proyecto, .link{
+    @include texto_footer_main(center, $fuenteFamilia2, nth($tamanioReutilizable, 5 ));
+    margin: $margenesDescTitulo;
+    color: $colorTexto;
+}
+
+.imagen_foto{
+    display: $imagenesNoMostrar;
+}
+/*Inicio encabezado del curriculum, proyecto, links y contacto*/
+.centrado{
+    @include grilla ($pantallaGrilla, $tamanioGrilla, $tamanioGrilla);
+}
+
+.bordes{
+    @extend %lineaBorde;
+}
+
+h1{
+    @include iconos ($colorTexto, 0px);
+    font-size: nth($tamanioReutilizable, 5 );
+    @extend %descripciones;
+}
+
+/*Tamaño de imagenes para pantallas mobiles*/
+.proyecto_img{
+    width: map-get($tamanios, anchoImagenes);
+}
+/*Formulario de Contacto*/
+.form_contacto{
+    @include pantalla ($pantallaFlex, $justificarBorde, $alinearItem);
+    margin: $margenesDescTitulo;
+}
+
+input,
+textarea{
+    font-family: $fuenteFamilia;
+    font-size: map-get($tamanios, fuentePorcentaje);
+}
+
+label{
+    font-family: $fuenteFamilia3;
+	color: $colorTexto;
+	font-size: map-get($tamanios, fuentePorcentaje);
+}
+/*Fin formulario*/
+
+.link1a{
+    @include linksPaginas ($imagenesNoMostrar, $alinearItem);
+}
+
+.grilla{
+    @include grilla ($pantallaGrilla, $tamanioGrilla, $tamanioGrilla);
+    @extend %paraGrilla;
+    font-size: nth($tamanioReutilizable, 2 );
+}

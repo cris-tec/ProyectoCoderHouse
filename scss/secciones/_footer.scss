@@ -1,0 +1,17 @@
+/*Inicio footer mobile*/
+/*Clase de Bootstrap modificada*/
+.text-dark-emphasis{
+    @include texto_footer_main(center, $fuenteFamilia, 1.05rem);
+}
+
+/*Iconos de Bootstrap modificados*/
+i{
+    @include iconos($colorTexto, $margenesIconoFooter);
+    font-size: nth($tamanioReutilizable, 8 )
+}
+
+
+footer{
+    @include pantalla($pantallaFlex, space-between, flex-end);
+}
+/*Fin footer mobile*/

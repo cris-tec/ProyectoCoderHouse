@@ -1,0 +1,27 @@
+@mixin texto_footer_main ($alineacion, $fuente, $tamanioFuente){
+    text-align: $alineacion;
+	font-family: $fuente;
+	font-size: $tamanioFuente;
+}
+
+@mixin iconos ($color, $margen){
+    color: $color;
+	margin: $margen;
+}
+
+@mixin pantalla ($mostrar, $justificar, $alinear){
+    display: $mostrar;
+	justify-content: $justificar;
+	align-items: $alinear;
+}
+
+@mixin grilla ($mostrarG, $colG, $rowG){
+    display: $mostrarG;
+	grid-template-columns: $colG;
+	grid-template-rows: $rowG;
+}
+
+@mixin linksPaginas ($decoracion, $alinearLink){
+	text-decoration: $decoracion;
+	text-align: $alinearLink;
+}

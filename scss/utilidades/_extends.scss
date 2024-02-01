@@ -1,0 +1,23 @@
+%descripciones{
+    font-family: $fuenteFamilia;
+	text-align: $alinearItem;
+}
+
+%descripciones2{
+    font-family: $fuenteFamilia2;
+	text-align: $alinearItem;
+}
+
+%lineaBorde{
+	justify-self: $justificarBorde;
+	width: $anchoBorde;
+	border:$lineaBorde;
+	border-radius: $redondeoBorde;
+	background-color: $colorInternoBorde;
+}
+
+%paraGrilla{
+	font-family: $fuenteFamilia;
+	color:#4a4b4b;
+	list-style: $estiloLista;
+}

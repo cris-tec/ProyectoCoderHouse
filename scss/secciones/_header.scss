@@ -1,0 +1,18 @@
+/*Inicio del Header*/
+/*Menú de Navegación*/
+nav{
+	display: $pantallaFlex;
+}
+.nav-item{
+    margin-right: map-get($tamanios, margenVistaAlto);
+	font-family: $fuenteFamilia2;
+	font-size: nth($tamanioReutilizable, 1 );
+}
+
+.nav-link{
+    color:$colorTexto;
+    &:hover{
+        background-color: $colorHover;
+        border-radius: map-get($tamanios, bordeRedondo);
+    }
+}
