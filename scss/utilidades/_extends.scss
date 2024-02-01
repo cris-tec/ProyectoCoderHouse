@@ -21,3 +21,11 @@
 	color:#4a4b4b;
 	list-style: $estiloLista;
 }
+
+%paraContenedor{
+	display: $pantallaFlex;
+	flex-direction: $direccionFlexH;
+	flex-wrap: $juntarFlex;
+	align-content: $alinearItem;
+	width:$anchoContenedor;
+}

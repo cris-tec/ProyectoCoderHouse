@@ -18,6 +18,14 @@ h1, .experiencia_cv, .estudios_cv, .referencias_cv, .proyecto1, .proyecto2, .pro
   list-style: disc;
 }
 
+.contenedor {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  width: 100%;
+}
+
 /*Inicio del Header*/
 /*Menú de Navegación*/
 nav {
@@ -36,6 +44,31 @@ nav {
 .nav-link:hover {
   background-color: rgba(197, 190, 178, 0.87);
   border-radius: 75%;
+}
+
+.navbar-toggler {
+  border: none !important;
+  font-size: 1rem !important;
+}
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+
+.navbar-brand {
+  display: none;
+}
+
+/*Logo de mi nombre*/
+.imagen_logo {
+  display: none;
+}
+
+.nombre {
+  display: flex;
+  font-family: "Wellfleet", monospace;
+  font-size: 1.75rem;
+  margin: auto;
+  color: rgb(61, 129, 246);
 }
 
 /*Inicio de main distintas páginas*/

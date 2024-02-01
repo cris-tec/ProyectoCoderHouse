@@ -16,3 +16,32 @@ nav{
         border-radius: map-get($tamanios, bordeRedondo);
     }
 }
+
+.navbar-toggler{
+    border: $imagenesNoMostrar !important;
+	font-size: nth($tamanioReutilizable, 2 ) !important;
+    &:focus{
+        box-shadow: $imagenesNoMostrar !important;
+    }
+}
+
+.navbar-brand{
+	display: $imagenesNoMostrar;
+}
+
+/*Logo de mi nombre*/
+.imagen_logo{
+	display: $imagenesNoMostrar;
+}
+
+.contenedor{
+    @extend %paraContenedor;
+}
+
+.nombre{
+    display: $pantallaFlex;
+	font-family: $fuenteFamilia3;
+	font-size: nth($tamanioReutilizable, 7 );
+	margin: map-get($tamanios, margenNombre);
+	color: $colorTexto;
+}
