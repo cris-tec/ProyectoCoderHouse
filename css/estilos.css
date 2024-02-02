@@ -71,6 +71,34 @@ nav {
   color: rgb(61, 129, 246);
 }
 
+/*Media Queries para Pantallas Intermedias*/
+@media screen and (min-width: 500px) and (max-width: 768px) {
+  .imagen_logo {
+    display: flex;
+    align-self: center;
+    width: 4rem;
+    height: 4rem;
+    margin: 0px 5px 0px 5px;
+    background-image: url(../imagenes/CD_v2.png);
+    background-size: 3rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+  }
+  nav {
+    margin: auto;
+  }
+  .navbar-brand {
+    display: initial;
+  }
+  .imagen_barra {
+    width: 2rem;
+  }
+  .nav-item {
+    font-size: 1rem;
+  }
+  /*Fin Header*/
+}
 /*Inicio de main distintas páginas*/
 /*Clase de Bootstrap modificada*/
 .text-dark {
@@ -147,6 +175,13 @@ label {
   font-size: 1rem;
 }
 
+/*Media Queries para Pantallas Intermedias*/
+@media screen and (min-width: 500px) and (max-width: 768px) {
+  /*main*/
+  .imagen_foto {
+    display: none;
+  }
+}
 /*Inicio footer mobile*/
 /*Clase de Bootstrap modificada*/
 .text-dark-emphasis {

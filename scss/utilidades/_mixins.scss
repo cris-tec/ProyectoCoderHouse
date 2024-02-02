@@ -25,3 +25,9 @@
 	text-decoration: $decoracion;
 	text-align: $alinearLink;
 }
+
+@mixin paraLogo ($repite, $imagenF, $bordeRedPorc){
+	background-repeat: $repite;
+	background-position: $imagenF;
+	border-radius: $bordeRedPorc;
+}

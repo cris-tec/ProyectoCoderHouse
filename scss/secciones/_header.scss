@@ -45,3 +45,30 @@ nav{
 	margin: map-get($tamanios, margenNombre);
 	color: $colorTexto;
 }
+
+/*Media Queries para Pantallas Intermedias*/
+@media screen and (min-width: 500px) and (max-width: 768px){
+    .imagen_logo{
+		display: $pantallaFlex;
+		align-self: $alinearItem;
+		width: nth($tamanioReutilizable, 11 );
+		height: nth($tamanioReutilizable, 11 );
+		margin: $margenesIconoFooter;
+		background-image:url(../imagenes/CD_v2.png);
+		background-size: nth($tamanioReutilizable, 10 );
+        @include paraLogo ($repiteSiNo, $imagenesFondo, $bordeRedondeadoPorcentaje);
+	}
+    nav{
+		margin: map-get($tamanios, margenNombre);
+	}
+	.navbar-brand{
+		display:$pantallaInicio;
+	}
+	.imagen_barra{
+		width: nth($tamanioReutilizable, 8 );
+	}
+	.nav-item{
+		font-size: nth($tamanioReutilizable, 2 );
+	}
+	/*Fin Header*/
+}

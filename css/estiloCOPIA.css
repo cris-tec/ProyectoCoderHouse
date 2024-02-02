@@ -179,7 +179,8 @@ i{
 /*Media Queries para Pantallas Intermedias*/
 @media screen and (min-width: 500px) and (max-width: 768px){
 	/*Logo de mi nombre*/
-	.imagen_logo{
+	/*Inicio Header*/
+	/*.imagen_logo{
 		display: flex;
 		align-self: center;
 		width: 4rem;
@@ -190,14 +191,11 @@ i{
 		background-position: center;
 		background-size: 3rem;
 		border-radius: 50%;
-	}
+	}*/
 	nav{
 		margin: auto;
 	}
 
-	.imagen_foto{
-		display: none;
-	}
 	.navbar-brand{
 		display:initial;
 	}
@@ -206,6 +204,11 @@ i{
 	}
 	.nav-item{
 		font-size: 1rem;
+	}
+	/*Fin Header*/
+	/*main*/
+	.imagen_foto{
+		display: none;
 	}
 }
 /*Media Queries para Pantallas medianas*/
