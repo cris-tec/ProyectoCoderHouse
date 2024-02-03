@@ -70,5 +70,66 @@ nav{
 	.nav-item{
 		font-size: nth($tamanioReutilizable, 2 );
 	}
-	/*Fin Header*/
+}
+
+/*Media Queries para Pantallas medianas*/
+@media screen and (min-width: 769px) and (max-width: 1023px){
+	/*Logo de mi nombre*/
+	.imagen_logo{
+		display: $pantallaFlex;
+		align-self: $alinearItem;
+		width: nth($tamanioReutilizable, 11 );
+		height: nth($tamanioReutilizable, 11 );
+		margin: $margenesIconoFooter;
+		background-image:url(../imagenes/CD_v2.png);
+		background-size: nth($tamanioReutilizable, 10 );
+        @include paraLogo ($repiteSiNo, $imagenesFondo, $bordeRedondeadoPorcentaje);
+	}
+	nav{
+		margin: map-get($tamanios, margenNombre);
+	}
+	.navbar-brand{
+		display:$pantallaInicio;
+	}
+	.nav-item{
+		font-size: nth($tamanioReutilizable, 2 );
+		margin-right: map-get($tamanios, margenDerecho);
+	}
+	.imagen_barra{
+		width: nth($tamanioReutilizable, 10 );
+	}
+}
+
+/*Media Queries para Pantallas Grandes*/
+@media screen and (min-width: 1024px){
+	/*Inicio del Header*/
+	/*Menú de Navegación*/
+	nav{
+		margin-left: map-get($tamanios, margenNombre);
+	}
+	.nav-item{
+		font-size: nth($tamanioReutilizable, 2 );
+		margin-right: nth($tamanioReutilizable, 2 );
+	}
+	.navbar-brand{
+		display:$pantallaInicio;
+	}
+	.imagen_barra{
+		width: nth($tamanioReutilizable, 10 );
+	}
+	.nombre{
+		font-size: nth($tamanioReutilizable, 8 );
+	}
+	/*Logo de mi nombre*/
+	.imagen_logo{
+		display: $pantallaFlex;
+		align-self: $alinearItem;
+		width: nth($tamanioReutilizable, 12 );
+		height: nth($tamanioReutilizable, 12 );
+		margin: $margenesImagenLogo;
+		background-image:url(../imagenes/CD_v2.png);
+		background-size: nth($tamanioReutilizable, 11 );
+        @include paraLogo ($repiteSiNo, $imagenesFondo, $bordeRedondeadoPorcentaje);
+	}
+	/*Fin del Header*/
 }

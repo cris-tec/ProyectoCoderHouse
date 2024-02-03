@@ -77,3 +77,70 @@ label{
 		display: $imagenesNoMostrar;
 	}
 }
+
+/*Media Queries para Pantallas medianas*/
+@media screen and (min-width: 769px) and (max-width: 1023px){
+    .cuerpo_info{
+        @include pantalla ($pantallaFlex, $justificarContenido, $alinearItem);
+        flex-wrap: $juntarFlex2;
+    }
+    .imagen_foto{
+        display: $imagenFoto;
+        height: map-get($tamanios, altoImagenes);
+        margin: map-get($tamanios, margenNombre);
+    }
+    .experiencia_cv, .estudios_cv, .referencias_cv, .proyecto1, .proyecto2, .proyecto_n, .link1, .link2, .link_n{
+        font-size: nth($tamanioReutilizable, 4 );
+    }
+    .experiencia, .estudios, .referencias, .proyecto, .link{
+        font-size: nth($tamanioReutilizable, 8 );
+    }
+    .text-dark{
+        @include texto_main ($alinearTextoIzq, $anchoTexto);
+        font-size: nth($tamanioReutilizable, 6 );
+    }
+    h1{
+        font-size: nth($tamanioReutilizable, 8 );
+    }
+    .grilla{
+        @include grilla ($pantallaGrilla, $tamanioGrillaAuto, $tamanioGrillaAuto);
+        font-size: nth($tamanioReutilizable, 4 );
+    }
+}
+/*Media Queries para Pantallas Grandes*/
+@media screen and (min-width: 1024px){
+    .cuerpo_info{
+        @include pantalla1024 ($pantallaFlex, $justificarContenido);
+        flex-wrap: $juntarFlex;
+    }
+    .imagen_foto{
+        display: $imagenFoto;
+        height: map-get($tamanios, altoImagen1024);
+        margin: map-get($tamanios, margenNombre);
+    }
+    /*Clase de Bootstrap modificada*/
+    .text-dark{
+        @include texto_main ($alinearTextoIzq, $anchoTexto2);
+        font-size: nth($tamanioReutilizable, 6 );
+    }
+    /*Parte de la descripción de mi perfil, curriculum y proyectos*/
+    .experiencia_cv, .estudios_cv, .referencias_cv, .proyecto1, .proyecto2, .proyecto_n, .link1, .link2, .link_n{
+	    font-size: nth($tamanioReutilizable, 6 );
+    }
+    .experiencia, .estudios, .referencias, .proyecto, .link{
+        font-size: nth($tamanioReutilizable, 8 );
+    }
+    .centrado{
+        @include grilla ($pantallaGrilla, $tamanioGrilla, $tamanioGrilla);
+    }
+    .bordes{
+        height: nth($tamanioReutilizable, 10 );
+    }
+    h1{
+        font-size: nth($tamanioReutilizable, 9 );
+    }
+    .grilla{
+        @include grilla ($pantallaGrilla, $tamanioGrillaAuto, $tamanioGrillaAuto);
+        font-size: nth($tamanioReutilizable, 6 );
+    }
+}

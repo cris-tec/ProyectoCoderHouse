@@ -31,3 +31,13 @@
 	background-position: $imagenF;
 	border-radius: $bordeRedPorc;
 }
+
+@mixin texto_main ($alineacion, $ancho){
+    text-align: $alineacion;
+	width: $ancho;
+}
+
+@mixin pantalla1024 ($mostrar, $justificar){
+    display: $mostrar;
+	justify-content: $justificar;
+}

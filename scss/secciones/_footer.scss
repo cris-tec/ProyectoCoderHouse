@@ -7,11 +7,31 @@
 /*Iconos de Bootstrap modificados*/
 i{
     @include iconos($colorTexto, $margenesIconoFooter);
-    font-size: nth($tamanioReutilizable, 8 )
+    font-size: nth($tamanioReutilizable, 8 );
 }
 
 
 footer{
-    @include pantalla($pantallaFlex, space-between, flex-end);
+    @include pantalla($pantallaFlex, $justificarContenido2, $alinearItemFlex);
 }
 /*Fin footer mobile*/
+/*Media Queries para Pantallas medianas*/
+@media screen and (min-width: 769px) and (max-width: 1023px){
+    i{
+        font-size: nth($tamanioReutilizable, 10 );
+    }
+    .text-dark-emphasis{
+        font-size: nth($tamanioReutilizable, 6 );
+    }
+}
+/*Media Queries para Pantallas Grandes*/
+@media screen and (min-width: 1024px){
+    /*Iconos de Bootstrap modificados*/
+    i{
+        font-size: nth($tamanioReutilizable, 10 );
+    }
+    /*Clase de Bootstrap modificada*/
+    .text-dark-emphasis{
+        font-size: nth($tamanioReutilizable, 6 );
+    }
+}

@@ -176,8 +176,8 @@ i{
 
 
 
-/*Media Queries para Pantallas Intermedias*/
-@media screen and (min-width: 500px) and (max-width: 768px){
+/*Media Queries para Pantallas Intermedias
+@media screen and (min-width: 500px) and (max-width: 768px){*/
 	/*Logo de mi nombre*/
 	/*Inicio Header*/
 	/*.imagen_logo{
@@ -192,7 +192,7 @@ i{
 		background-size: 3rem;
 		border-radius: 50%;
 	}*/
-	nav{
+	/*nav{
 		margin: auto;
 	}
 
@@ -207,14 +207,14 @@ i{
 	}
 	/*Fin Header*/
 	/*main*/
-	.imagen_foto{
+	/*.imagen_foto{
 		display: none;
 	}
-}
-/*Media Queries para Pantallas medianas*/
-@media screen and (min-width: 769px) and (max-width: 1023px){
+}*/
+/*Media Queries para Pantallas medianas
+@media screen and (min-width: 769px) and (max-width: 1023px){*/
 	/*Logo de mi nombre*/
-	.imagen_logo{
+	/*.imagen_logo{
 		display: flex;
 		align-self: center;
 		width: 4rem;
@@ -228,8 +228,8 @@ i{
 	}
 	nav{
 		margin: auto;
-	}
-	.cuerpo_info{
+	}*/
+	/*.cuerpo_info{
 		display: flex;
 		justify-content: space-evenly;
 		flex-wrap: nowrap;
@@ -239,8 +239,8 @@ i{
 		display: inline-block;
 		height: 15rem;
 		margin: auto;
-	}
-	.navbar-brand{
+	}*/
+	/*.navbar-brand{
 		display:initial;
 	}
 	.imagen_barra{
@@ -255,8 +255,8 @@ i{
 	}
 	.text-dark-emphasis{
 		font-size: 1.5rem;
-	}
-	.experiencia_cv, .estudios_cv, .referencias_cv, .proyecto1, .proyecto2, .proyecto_n, .link1, .link2, .link_n{
+	}*/
+	/*.experiencia_cv, .estudios_cv, .referencias_cv, .proyecto1, .proyecto2, .proyecto_n, .link1, .link2, .link_n{
 		font-size: 1.15rem;
 	}
 	
@@ -277,11 +277,11 @@ i{
 		grid-template-rows: auto auto;
 		font-size: 1.15rem;
 	}
-}
-/*Media Queries para Pantallas Grandes*/
-@media screen and (min-width: 1024px){
+}*/
+/*Media Queries para Pantallas Grandes
+@media screen and (min-width: 1024px){*/
 /*Inicio del Header*/
-/*Menú de Navegación*/
+/*Menú de Navegación
 nav{
 	margin-left: auto;
 }
@@ -301,9 +301,9 @@ nav{
 
 .nombre{
 	font-size: 2rem;
-}
+}*/
 
-/*Logo de mi nombre*/
+/*Logo de mi nombre
 .imagen_logo{
 	display: flex;
 	align-self: center;
@@ -315,12 +315,12 @@ nav{
 	background-position: center;
 	background-size: 4rem;
 	border-radius: 50%;
-}
+}*/
 
 /*Fin del Header*/
 
 /*Inicio de main distintas páginas*/
-.cuerpo_info{
+/*.cuerpo_info{
 	display: flex;
 	justify-content: space-evenly;
 	flex-wrap: wrap;
@@ -329,15 +329,15 @@ nav{
 	display: inline-block;
 	height: 20rem;
 	margin: auto;
-}
-/*Clase de Bootstrap modificada*/
+}*/
+/*Clase de Bootstrap modificada
 .text-dark{
 	font-size: 1.5rem;
 	text-align: left;
 	width: 40%;
-}
+}*/
 
-/*Parte de la descripción de mi perfil, curriculum y proyectos*/
+/*Parte de la descripción de mi perfil, curriculum y proyectos
 .experiencia_cv, .estudios_cv, .referencias_cv, .proyecto1, .proyecto2, .proyecto_n, .link1, .link2, .link_n{
 	font-size: 1.5rem;
 }
@@ -365,19 +365,19 @@ h1{
 	grid-template-columns: auto auto;
 	grid-template-rows: auto auto;
 	font-size: 1.5rem;
-}
+}*/
 /*Fin de main distintas páginas*/
 
 /*Inicio footer*/
 
 /*Iconos de Bootstrap modificados*/
-i{
+/*i{
 	font-size: 3rem;
-}
+}*/
 
 /*Clase de Bootstrap modificada*/
-.text-dark-emphasis{
+/*.text-dark-emphasis{
 	font-size: 1.5rem;
-}
-/*Fin footer*/
-}
+}*/
+/*Fin footer
+}*/
