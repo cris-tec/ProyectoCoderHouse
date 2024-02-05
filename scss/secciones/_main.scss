@@ -76,6 +76,12 @@ label{
 	.imagen_foto{
 		display: $imagenesNoMostrar;
 	}
+    .proyecto_img{
+        transition: transform .5s;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
 }
 
 /*Media Queries para Pantallas medianas*/
@@ -105,6 +111,12 @@ label{
     .grilla{
         @include grilla ($pantallaGrilla, $tamanioGrillaAuto, $tamanioGrillaAuto);
         font-size: nth($tamanioReutilizable, 4 );
+    }
+    .proyecto_img{
+        transition: transform .5s;
+        &:hover{
+            transform: scale(1.1);
+        }
     }
 }
 /*Media Queries para Pantallas Grandes*/
@@ -142,5 +154,11 @@ label{
     .grilla{
         @include grilla ($pantallaGrilla, $tamanioGrillaAuto, $tamanioGrillaAuto);
         font-size: nth($tamanioReutilizable, 6 );
+    }
+    .proyecto_img{
+        transition: transform .5s;
+        &:hover{
+            transform: scale(1.1);
+        }
     }
 }
