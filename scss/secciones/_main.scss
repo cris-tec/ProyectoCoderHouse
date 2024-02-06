@@ -41,6 +41,10 @@ h1{
 /*Tamaño de imagenes para pantallas mobiles*/
 .proyecto_img{
     width: map-get($tamanios, anchoImagenes);
+    transition: transform .5s;
+    &:hover{
+        transform: scale(1.1);
+    }
 }
 /*Formulario de Contacto*/
 .form_contacto{

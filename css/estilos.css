@@ -203,6 +203,10 @@ h1 {
 /*Tamaño de imagenes para pantallas mobiles*/
 .proyecto_img {
   width: 17rem;
+  transition: transform 0.5s;
+}
+.proyecto_img:hover {
+  transform: scale(1.1);
 }
 
 /*Formulario de Contacto*/
