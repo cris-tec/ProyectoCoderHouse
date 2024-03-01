@@ -1,15 +1,15 @@
 %descripciones{
     font-family: $fuenteFamilia;
-	text-align: $alinearItem;
+	text-align: center;
 }
 
 %descripciones2{
     font-family: $fuenteFamilia2;
-	text-align: $alinearItem;
+	text-align: center;
 }
 
 %lineaBorde{
-	justify-self: $justificarBorde;
+	justify-self: center;
 	width: $anchoBorde;
 	border:$lineaBorde;
 	border-radius: $redondeoBorde;
@@ -26,6 +26,6 @@
 	display: $pantallaFlex;
 	flex-direction: $direccionFlexH;
 	flex-wrap: $juntarFlex;
-	align-content: $alinearItem;
+	align-content: center;
 	width:$anchoContenedor;
 }

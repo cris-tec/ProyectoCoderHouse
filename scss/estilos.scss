@@ -13,5 +13,8 @@
 }
 /*Color del cuerpo de la página*/
 body{
+	display: grid;
+	min-height: 100vh;
+	grid-template-rows: auto auto auto;
 	background-color:$colorPrincipalBody;
 }

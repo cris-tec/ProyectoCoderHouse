@@ -48,25 +48,33 @@ h1{
 }
 /*Formulario de Contacto*/
 .form_contacto{
-    @include pantalla ($pantallaFlex, $justificarBorde, $alinearItem);
+    @include pantalla ($pantallaFlex, center, center);
     margin: $margenesDescTitulo;
 }
-
-input,
+form{
+    text-align: center;
+}
+input[type=text],
 textarea{
+    width: 50%;
     font-family: $fuenteFamilia;
     font-size: map-get($tamanios, fuentePorcentaje);
+    margin: 8px 0;
+    border-radius: 6px;
+    border: 1px solid #faf6f0;
 }
 
 label{
+    width: 100%;
     font-family: $fuenteFamilia3;
 	color: $colorTexto;
 	font-size: map-get($tamanios, fuentePorcentaje);
+    margin: 4px 0;
 }
 /*Fin formulario*/
 
 .link1a{
-    @include linksPaginas ($imagenesNoMostrar, $alinearItem);
+    @include linksPaginas ($imagenesNoMostrar, center);
 }
 
 .grilla{
@@ -91,13 +99,14 @@ label{
 /*Media Queries para Pantallas medianas*/
 @media screen and (min-width: 769px) and (max-width: 1023px){
     .cuerpo_info{
-        @include pantalla ($pantallaFlex, $justificarContenido, $alinearItem);
+        @include pantalla ($pantallaFlex, $justificarContenido, center);
         flex-wrap: $juntarFlex2;
     }
     .imagen_foto{
         display: $imagenFoto;
         height: map-get($tamanios, altoImagenes);
-        margin: map-get($tamanios, margenNombre);
+        width: map-get($tamanios, anchoImagenCV);
+        border-radius: 10%;
     }
     .experiencia_cv, .estudios_cv, .referencias_cv, .proyecto1, .proyecto2, .proyecto_n, .link1, .link2, .link_n{
         font-size: nth($tamanioReutilizable, 4 );
@@ -106,8 +115,10 @@ label{
         font-size: nth($tamanioReutilizable, 8 );
     }
     .text-dark{
-        @include texto_main ($alinearTextoIzq, $anchoTexto);
+        @include texto_main (left, $anchoTexto);
         font-size: nth($tamanioReutilizable, 6 );
+        margin-left: 1rem;
+        margin-bottom: 0px;
     }
     h1{
         font-size: nth($tamanioReutilizable, 8 );
@@ -133,11 +144,13 @@ label{
         display: $imagenFoto;
         height: map-get($tamanios, altoImagen1024);
         margin: map-get($tamanios, margenNombre);
+        border-radius: 10%;
     }
     /*Clase de Bootstrap modificada*/
     .text-dark{
-        @include texto_main ($alinearTextoIzq, $anchoTexto2);
+        @include texto_main (left, $anchoTexto2);
         font-size: nth($tamanioReutilizable, 6 );
+        margin-left: 1rem;
     }
     /*Parte de la descripción de mi perfil, curriculum y proyectos*/
     .experiencia_cv, .estudios_cv, .referencias_cv, .proyecto1, .proyecto2, .proyecto_n, .link1, .link2, .link_n{

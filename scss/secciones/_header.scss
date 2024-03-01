@@ -50,13 +50,13 @@ nav{
 @media screen and (min-width: 500px) and (max-width: 768px){
     .imagen_logo{
 		display: $pantallaFlex;
-		align-self: $alinearItem;
+		align-self: center;
 		width: nth($tamanioReutilizable, 11 );
 		height: nth($tamanioReutilizable, 11 );
 		margin: $margenesIconoFooter;
 		background-image:url(../imagenes/CD_v2.png);
 		background-size: nth($tamanioReutilizable, 10 );
-        @include paraLogo ($repiteSiNo, $imagenesFondo, $bordeRedondeadoPorcentaje);
+        @include paraLogo ($repiteSiNo, center, $bordeRedondeadoPorcentaje);
 	}
     nav{
 		margin: map-get($tamanios, margenNombre);
@@ -77,13 +77,13 @@ nav{
 	/*Logo de mi nombre*/
 	.imagen_logo{
 		display: $pantallaFlex;
-		align-self: $alinearItem;
+		align-self: center;
 		width: nth($tamanioReutilizable, 11 );
 		height: nth($tamanioReutilizable, 11 );
 		margin: $margenesIconoFooter;
 		background-image:url(../imagenes/CD_v2.png);
 		background-size: nth($tamanioReutilizable, 10 );
-        @include paraLogo ($repiteSiNo, $imagenesFondo, $bordeRedondeadoPorcentaje);
+        @include paraLogo ($repiteSiNo, center, $bordeRedondeadoPorcentaje);
 	}
 	nav{
 		margin: map-get($tamanios, margenNombre);
@@ -123,13 +123,13 @@ nav{
 	/*Logo de mi nombre*/
 	.imagen_logo{
 		display: $pantallaFlex;
-		align-self: $alinearItem;
+		align-self: center;
 		width: nth($tamanioReutilizable, 12 );
 		height: nth($tamanioReutilizable, 12 );
 		margin: $margenesImagenLogo;
 		background-image:url(../imagenes/CD_v2.png);
 		background-size: nth($tamanioReutilizable, 11 );
-        @include paraLogo ($repiteSiNo, $imagenesFondo, $bordeRedondeadoPorcentaje);
+        @include paraLogo ($repiteSiNo, center, $bordeRedondeadoPorcentaje);
 	}
 	/*Fin del Header*/
 }
